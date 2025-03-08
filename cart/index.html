@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cart Page</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="cart-container">
+    <!-- Left Side: Selected Items -->
+    <div class="cart-items">
+      <h2>Your Cart</h2>
+      <div class="item-list">
+        <!-- Example Item -->
+        <div class="item">
+          <img src="food.png" alt="Product Image">
+          <div class="item-details">
+            <h3>Drolls Dogfood</h3>
+            <p>Weight: 1.2kg</p>
+            <div class="quantity-control">
+              <button class="quantity-btn subtract-btn">-</button>
+              <span class="quantity">1</span>
+              <button class="quantity-btn add-btn">+</button>
+            </div>
+            <p>Price: Rs.<span class="price">950</span></p>
+            <button class="remove-btn">Remove</button>
+          </div>
+        </div>
+        <!-- Add more items dynamically -->
+      </div>
+    </div>
+
+    <!-- Right Side: Order Summary -->
+    <div class="order-summary">
+      <h2>Order Summary</h2>
+      <div class="summary-box">
+        <p>Subtotal: Rs. <span id="subtotal">950</span></p>
+        <p>Shipping Fee: Rs. <span id="shipping">100</span></p>
+        <hr>
+        <p>Total: Rs. <span id="total">1050</span></p>
+      </div>
+      <div class="checkout-box">
+        <button class="checkout-btn">Proceed to Checkout</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
